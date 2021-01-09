@@ -14,9 +14,7 @@ function App() {
   return (
     <Router>
       <div>
-        
 
-        <hr />
 
         {/*
           A <Switch> looks through all its children <Route>
