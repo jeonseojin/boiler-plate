@@ -39,23 +39,14 @@ function RegisterPage(props) {
             name: Name,
         }
         
-        // dispatch(registerUser(body))
-        //     .then(response => {
-        //         if (response.payload.success) {
-        //             props.history.push("/login");
-        //         } else {
-        //             alert("Failed to sign up");
-        //         }
-        // })
         dispatch(registerUser(body))
             .then(response => {
-                if(response.payload.success){
-                    props.history.push('/login')
+                if (response.payload.success) {
+                    props.history.push("/login");
+                } else {
+                    alert("Failed to sign up");
                 }
-                else {
-                    alert("Failed to sign up")
-                }
-            })
+        })
     }
 
     return (
